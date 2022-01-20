@@ -1,0 +1,66 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DATA/vivado_project/0TEST/minist_cnn/project_3/project_3.srcs/sources_1/ip/W_fc2/sim/W_fc2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module W_fc2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DATA/vivado_project/0TEST/minist_cnn/project_3/project_3.srcs/sources_1/ip/B_fc2/sim/B_fc2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module B_fc2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DATA/vivado_project/0TEST/minist_cnn/project_3/project_3.srcs/sources_1/ip/fifo_generator_200/sim/fifo_generator_200.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_generator_200
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DATA/vivado_project/0TEST/minist_cnn/project_3/project_3.srcs/sources_1/ip/W_fc1/sim/W_fc1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module W_fc1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DATA/vivado_project/0TEST/minist_cnn/project_3/project_3.srcs/sources_1/ip/B_fc1/sim/B_fc1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module B_fc1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DATA/vivado_project/0TEST/minist_cnn/project_3/project_3.srcs/sources_1/ip/fifo_generator_1000/sim/fifo_generator_1000.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_generator_1000
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DATA/vivado_project/0TEST/minist_cnn/project_3/project_3.srcs/sources_1/ip/B_conv2/sim/B_conv2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module B_conv2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DATA/vivado_project/0TEST/minist_cnn/project_3/project_3.srcs/sources_1/ip/W_conv2/sim/W_conv2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module W_conv2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DATA/vivado_project/0TEST/minist_cnn/project_3/project_3.srcs/sources_1/ip/feature_ram/sim/feature_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module feature_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DATA/vivado_project/0TEST/minist_cnn/project_3/project_3.srcs/sources_1/ip/B_conv1/sim/B_conv1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module B_conv1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DATA/vivado_project/0TEST/minist_cnn/project_3/project_3.srcs/sources_1/ip/W_conv1/sim/W_conv1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module W_conv1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DATA/vivado_project/0TEST/minist_cnn/project_3/project_3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DATA/vivado_project/0TEST/minist_cnn/project_3/project_3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DATA/vivado_project/0TEST/minist_cnn/project_3/project_3.srcs/sources_1/ip/picture_784/sim/picture_784.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module picture_784
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DATA/vivado_project/0TEST/minist_cnn/project_3/project_3.srcs/sources_1/new/Multiply_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiply_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DATA/vivado_project/0TEST/minist_cnn/project_3/project_3.srcs/sources_1/new/cnn.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cnn
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DATA/vivado_project/0TEST/minist_cnn/project_3/project_3.srcs/sources_1/new/conv1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module conv1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DATA/vivado_project/0TEST/minist_cnn/project_3/project_3.srcs/sources_1/new/conv1_bias.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module conv1_bias
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DATA/vivado_project/0TEST/minist_cnn/project_3/project_3.srcs/sources_1/new/conv1_weight.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module conv1_weight
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DATA/vivado_project/0TEST/minist_cnn/project_3/project_3.srcs/sources_1/new/conv2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module conv2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DATA/vivado_project/0TEST/minist_cnn/project_3/project_3.srcs/sources_1/new/conv2_bisa.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module conv2_bias
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DATA/vivado_project/0TEST/minist_cnn/project_3/project_3.srcs/sources_1/new/conv2_mutiply.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module conv2_mutiply
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DATA/vivado_project/0TEST/minist_cnn/project_3/project_3.srcs/sources_1/new/conv2_weight.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module conv2_weight
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DATA/vivado_project/0TEST/minist_cnn/project_3/project_3.srcs/sources_1/new/fc1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fc1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DATA/vivado_project/0TEST/minist_cnn/project_3/project_3.srcs/sources_1/new/fc1_bias.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fc1_bias
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DATA/vivado_project/0TEST/minist_cnn/project_3/project_3.srcs/sources_1/new/fc2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fc2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DATA/vivado_project/0TEST/minist_cnn/project_3/project_3.srcs/sources_1/new/fc2_bias.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fc2_bias
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DATA/vivado_project/0TEST/minist_cnn/project_3/project_3.srcs/sources_1/new/feature1_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module feature1_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DATA/vivado_project/0TEST/minist_cnn/project_3/project_3.srcs/sources_1/new/fifo_1000.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_1000
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DATA/vivado_project/0TEST/minist_cnn/project_3/project_3.srcs/sources_1/new/fifo_200.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_200
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DATA/vivado_project/0TEST/minist_cnn/project_3/project_3.srcs/sources_1/new/image_data.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module image_data
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DATA/vivado_project/0TEST/minist_cnn/project_3/project_3.srcs/sources_1/new/pooling.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pooling
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DATA/vivado_project/0TEST/minist_cnn/project_3/project_3.srcs/sim_1/new/cnn_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cnn_tb

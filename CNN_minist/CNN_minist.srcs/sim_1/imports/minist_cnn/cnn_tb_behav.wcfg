@@ -1,0 +1,587 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="cnn_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="cnn_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="76034000000fs"></ZoomStartTime>
+      <ZoomEndTime time="148634000001fs"></ZoomEndTime>
+      <Cursor1Time time="97034000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="209"></NameColumnWidth>
+      <ValueColumnWidth column_width="215"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="139" />
+   <wvobject fp_name="/cnn_tb/cnn/fc1_u/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/fc1_u/clk_5x" type="logic">
+      <obj_property name="ElementShortName">clk_5x</obj_property>
+      <obj_property name="ObjectShortName">clk_5x</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/fc1_u/rst_n" type="logic">
+      <obj_property name="ElementShortName">rst_n</obj_property>
+      <obj_property name="ObjectShortName">rst_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/fc1_u/vaild" type="logic">
+      <obj_property name="ElementShortName">vaild</obj_property>
+      <obj_property name="ObjectShortName">vaild</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/fc1_u/data_in" type="array">
+      <obj_property name="ElementShortName">data_in[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data_in[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/fc1_u/out_en" type="logic">
+      <obj_property name="ElementShortName">out_en</obj_property>
+      <obj_property name="ObjectShortName">out_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/fc1_u/data_out" type="array">
+      <obj_property name="ElementShortName">data_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/fc1_u/cnt_data" type="array">
+      <obj_property name="ElementShortName">cnt_data[9:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_data[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/fc1_u/W_en" type="logic">
+      <obj_property name="ElementShortName">W_en</obj_property>
+      <obj_property name="ObjectShortName">W_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/fc1_u/vaild_r" type="logic">
+      <obj_property name="ElementShortName">vaild_r</obj_property>
+      <obj_property name="ObjectShortName">vaild_r</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/fc1_u/vaild_r2" type="logic">
+      <obj_property name="ElementShortName">vaild_r2</obj_property>
+      <obj_property name="ObjectShortName">vaild_r2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/fc1_u/addra" type="array">
+      <obj_property name="ElementShortName">addra[17:0]</obj_property>
+      <obj_property name="ObjectShortName">addra[17:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/fc1_u/addra_1000" type="array">
+      <obj_property name="ElementShortName">addra_1000[17:0]</obj_property>
+      <obj_property name="ObjectShortName">addra_1000[17:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/fc1_u/addra_1000_r" type="array">
+      <obj_property name="ElementShortName">addra_1000_r[17:0]</obj_property>
+      <obj_property name="ObjectShortName">addra_1000_r[17:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/fc1_u/cnt_200" type="array">
+      <obj_property name="ElementShortName">cnt_200[8:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_200[8:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/fc1_u/cnt_200_r" type="array">
+      <obj_property name="ElementShortName">cnt_200_r[8:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_200_r[8:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/fc1_u/fc1_bias" type="array">
+      <obj_property name="ElementShortName">fc1_bias[47:0]</obj_property>
+      <obj_property name="ObjectShortName">fc1_bias[47:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/fc1_u/bias_en" type="logic">
+      <obj_property name="ElementShortName">bias_en</obj_property>
+      <obj_property name="ObjectShortName">bias_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/fc1_u/data_out_r" type="array">
+      <obj_property name="ElementShortName">data_out_r[63:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out_r[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/fc1_u/data_out_r2" type="array">
+      <obj_property name="ElementShortName">data_out_r2[47:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out_r2[47:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/fc1_u/data_out_r3" type="array">
+      <obj_property name="ElementShortName">data_out_r3[47:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out_r3[47:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/fc1_u/last_r" type="logic">
+      <obj_property name="ElementShortName">last_r</obj_property>
+      <obj_property name="ObjectShortName">last_r</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/fc1_u/last_r2" type="logic">
+      <obj_property name="ElementShortName">last_r2</obj_property>
+      <obj_property name="ObjectShortName">last_r2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/fc1_u/last" type="logic">
+      <obj_property name="ElementShortName">last</obj_property>
+      <obj_property name="ObjectShortName">last</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/fc1_u/data_1" type="array">
+      <obj_property name="ElementShortName">data_1[47:0]</obj_property>
+      <obj_property name="ObjectShortName">data_1[47:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/fc1_u/fc1_num" type="array">
+      <obj_property name="ElementShortName">fc1_num[9:0]</obj_property>
+      <obj_property name="ObjectShortName">fc1_num[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/fc1_u/fc2_num" type="array">
+      <obj_property name="ElementShortName">fc2_num[9:0]</obj_property>
+      <obj_property name="ObjectShortName">fc2_num[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/fc1_u/weight_widht" type="array">
+      <obj_property name="ElementShortName">weight_widht[5:0]</obj_property>
+      <obj_property name="ObjectShortName">weight_widht[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/fc1_u/feature_widht" type="array">
+      <obj_property name="ElementShortName">feature_widht[6:0]</obj_property>
+      <obj_property name="ObjectShortName">feature_widht[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/fc2_u/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/fc2_u/clk_5x" type="logic">
+      <obj_property name="ElementShortName">clk_5x</obj_property>
+      <obj_property name="ObjectShortName">clk_5x</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/fc2_u/rst_n" type="logic">
+      <obj_property name="ElementShortName">rst_n</obj_property>
+      <obj_property name="ObjectShortName">rst_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/fc2_u/vaild" type="logic">
+      <obj_property name="ElementShortName">vaild</obj_property>
+      <obj_property name="ObjectShortName">vaild</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/fc2_u/data_in" type="array">
+      <obj_property name="ElementShortName">data_in[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data_in[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/fc2_u/out_en" type="logic">
+      <obj_property name="ElementShortName">out_en</obj_property>
+      <obj_property name="ObjectShortName">out_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/fc2_u/data_out" type="array">
+      <obj_property name="ElementShortName">data_out[47:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out[47:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/fc2_u/cnt_data" type="array">
+      <obj_property name="ElementShortName">cnt_data[9:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_data[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/fc2_u/W_en" type="logic">
+      <obj_property name="ElementShortName">W_en</obj_property>
+      <obj_property name="ObjectShortName">W_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/fc2_u/vaild_r" type="logic">
+      <obj_property name="ElementShortName">vaild_r</obj_property>
+      <obj_property name="ObjectShortName">vaild_r</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/fc2_u/vaild_r2" type="logic">
+      <obj_property name="ElementShortName">vaild_r2</obj_property>
+      <obj_property name="ObjectShortName">vaild_r2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/fc2_u/addra" type="array">
+      <obj_property name="ElementShortName">addra[17:0]</obj_property>
+      <obj_property name="ObjectShortName">addra[17:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/fc2_u/addra_1000" type="array">
+      <obj_property name="ElementShortName">addra_1000[17:0]</obj_property>
+      <obj_property name="ObjectShortName">addra_1000[17:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/fc2_u/addra_1000_r" type="array">
+      <obj_property name="ElementShortName">addra_1000_r[17:0]</obj_property>
+      <obj_property name="ObjectShortName">addra_1000_r[17:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/fc2_u/cnt_200" type="array">
+      <obj_property name="ElementShortName">cnt_200[8:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_200[8:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/fc2_u/cnt_200_r" type="array">
+      <obj_property name="ElementShortName">cnt_200_r[8:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_200_r[8:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/fc2_u/fc2_bias" type="array">
+      <obj_property name="ElementShortName">fc2_bias[47:0]</obj_property>
+      <obj_property name="ObjectShortName">fc2_bias[47:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/fc2_u/bias_en" type="logic">
+      <obj_property name="ElementShortName">bias_en</obj_property>
+      <obj_property name="ObjectShortName">bias_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/fc2_u/data_out_r" type="array">
+      <obj_property name="ElementShortName">data_out_r[63:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out_r[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/fc2_u/data_out_r2" type="array">
+      <obj_property name="ElementShortName">data_out_r2[47:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out_r2[47:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/fc2_u/data_out_r3" type="array">
+      <obj_property name="ElementShortName">data_out_r3[47:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out_r3[47:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/fc2_u/last_r" type="logic">
+      <obj_property name="ElementShortName">last_r</obj_property>
+      <obj_property name="ObjectShortName">last_r</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/fc2_u/last_r2" type="logic">
+      <obj_property name="ElementShortName">last_r2</obj_property>
+      <obj_property name="ObjectShortName">last_r2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/fc2_u/last" type="logic">
+      <obj_property name="ElementShortName">last</obj_property>
+      <obj_property name="ObjectShortName">last</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/fc2_u/data_1" type="array">
+      <obj_property name="ElementShortName">data_1[47:0]</obj_property>
+      <obj_property name="ObjectShortName">data_1[47:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/fc2_u/fc1_num" type="array">
+      <obj_property name="ElementShortName">fc1_num[9:0]</obj_property>
+      <obj_property name="ObjectShortName">fc1_num[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/fc2_u/fc2_num" type="array">
+      <obj_property name="ElementShortName">fc2_num[9:0]</obj_property>
+      <obj_property name="ObjectShortName">fc2_num[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/fc2_u/weight_widht" type="array">
+      <obj_property name="ElementShortName">weight_widht[5:0]</obj_property>
+      <obj_property name="ObjectShortName">weight_widht[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/fc2_u/feature_widht" type="array">
+      <obj_property name="ElementShortName">feature_widht[6:0]</obj_property>
+      <obj_property name="ObjectShortName">feature_widht[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/conv2_u1/clk_sys" type="logic">
+      <obj_property name="ElementShortName">clk_sys</obj_property>
+      <obj_property name="ObjectShortName">clk_sys</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/conv2_u1/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/conv2_u1/clk_2x" type="logic">
+      <obj_property name="ElementShortName">clk_2x</obj_property>
+      <obj_property name="ObjectShortName">clk_2x</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/conv2_u1/clk_5x" type="logic">
+      <obj_property name="ElementShortName">clk_5x</obj_property>
+      <obj_property name="ObjectShortName">clk_5x</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/conv2_u1/rst_n" type="logic">
+      <obj_property name="ElementShortName">rst_n</obj_property>
+      <obj_property name="ObjectShortName">rst_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/conv2_u1/data_in" type="array">
+      <obj_property name="ElementShortName">data_in[191:0]</obj_property>
+      <obj_property name="ObjectShortName">data_in[191:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/conv2_u1/vaild" type="logic">
+      <obj_property name="ElementShortName">vaild</obj_property>
+      <obj_property name="ObjectShortName">vaild</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/conv2_u1/fifo_full" type="logic">
+      <obj_property name="ElementShortName">fifo_full</obj_property>
+      <obj_property name="ObjectShortName">fifo_full</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/conv2_u1/last" type="logic">
+      <obj_property name="ElementShortName">last</obj_property>
+      <obj_property name="ObjectShortName">last</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/conv2_u1/data_out" type="array">
+      <obj_property name="ElementShortName">data_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/conv2_u1/out_start" type="logic">
+      <obj_property name="ElementShortName">out_start</obj_property>
+      <obj_property name="ObjectShortName">out_start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/conv2_u1/out_end" type="logic">
+      <obj_property name="ElementShortName">out_end</obj_property>
+      <obj_property name="ObjectShortName">out_end</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/conv2_u1/out_ready" type="logic">
+      <obj_property name="ElementShortName">out_ready</obj_property>
+      <obj_property name="ObjectShortName">out_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/conv2_u1/out_vaild" type="logic">
+      <obj_property name="ElementShortName">out_vaild</obj_property>
+      <obj_property name="ObjectShortName">out_vaild</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/conv2_u1/c2_b_en" type="logic">
+      <obj_property name="ElementShortName">c2_b_en</obj_property>
+      <obj_property name="ObjectShortName">c2_b_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/conv2_u1/c2_w_en" type="logic">
+      <obj_property name="ElementShortName">c2_w_en</obj_property>
+      <obj_property name="ObjectShortName">c2_w_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/conv2_u1/c2_w_en_r" type="logic">
+      <obj_property name="ElementShortName">c2_w_en_r</obj_property>
+      <obj_property name="ObjectShortName">c2_w_en_r</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/conv2_u1/c2_w_en_num" type="array">
+      <obj_property name="ElementShortName">c2_w_en_num[4:0]</obj_property>
+      <obj_property name="ObjectShortName">c2_w_en_num[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/conv2_u1/c2_b" type="array">
+      <obj_property name="ElementShortName">c2_b[16:0]</obj_property>
+      <obj_property name="ObjectShortName">c2_b[16:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/conv2_u1/data_bias_r" type="array">
+      <obj_property name="ElementShortName">data_bias_r[32:0]</obj_property>
+      <obj_property name="ObjectShortName">data_bias_r[32:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/conv2_u1/data_bias" type="array">
+      <obj_property name="ElementShortName">data_bias[32:0]</obj_property>
+      <obj_property name="ObjectShortName">data_bias[32:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/conv2_u1/cnt_b" type="array">
+      <obj_property name="ElementShortName">cnt_b[4:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_b[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/conv2_u1/c2_w" type="array">
+      <obj_property name="ElementShortName">c2_w[101:0]</obj_property>
+      <obj_property name="ObjectShortName">c2_w[101:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/conv2_u1/Multiply_weight" type="array">
+      <obj_property name="ElementShortName">Multiply_weight[0:5][16:0]</obj_property>
+      <obj_property name="ObjectShortName">Multiply_weight[0:5][16:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/conv2_u1/u1_vaild" type="logic">
+      <obj_property name="ElementShortName">u1_vaild</obj_property>
+      <obj_property name="ObjectShortName">u1_vaild</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/conv2_u1/buffer_1" type="array">
+      <obj_property name="ElementShortName">buffer_1[0:11][191:0]</obj_property>
+      <obj_property name="ObjectShortName">buffer_1[0:11][191:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/conv2_u1/buffer_2" type="array">
+      <obj_property name="ElementShortName">buffer_2[0:11][191:0]</obj_property>
+      <obj_property name="ObjectShortName">buffer_2[0:11][191:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/conv2_u1/buffer_3" type="array">
+      <obj_property name="ElementShortName">buffer_3[0:11][191:0]</obj_property>
+      <obj_property name="ObjectShortName">buffer_3[0:11][191:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/conv2_u1/cnt_cols" type="array">
+      <obj_property name="ElementShortName">cnt_cols[11:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_cols[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/conv2_u1/cnt_rows" type="array">
+      <obj_property name="ElementShortName">cnt_rows[11:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_rows[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/conv2_u1/vaild_conv2_r" type="logic">
+      <obj_property name="ElementShortName">vaild_conv2_r</obj_property>
+      <obj_property name="ObjectShortName">vaild_conv2_r</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/conv2_u1/vaild_conv2_r2" type="logic">
+      <obj_property name="ElementShortName">vaild_conv2_r2</obj_property>
+      <obj_property name="ObjectShortName">vaild_conv2_r2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/conv2_u1/data_r_n" type="array">
+      <obj_property name="ElementShortName">data_r_n[191:0]</obj_property>
+      <obj_property name="ObjectShortName">data_r_n[191:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/conv2_u1/clk_num" type="array">
+      <obj_property name="ElementShortName">clk_num[3:0]</obj_property>
+      <obj_property name="ObjectShortName">clk_num[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/conv2_u1/Mult_data_out" type="array">
+      <obj_property name="ElementShortName">Mult_data_out[0:5][32:0]</obj_property>
+      <obj_property name="ObjectShortName">Mult_data_out[0:5][32:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/conv2_u1/Mult_data_in" type="array">
+      <obj_property name="ElementShortName">Mult_data_in[0:5][32:0]</obj_property>
+      <obj_property name="ObjectShortName">Mult_data_in[0:5][32:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/conv2_u1/Multiply_adder_en" type="logic">
+      <obj_property name="ElementShortName">Multiply_adder_en</obj_property>
+      <obj_property name="ObjectShortName">Multiply_adder_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/conv2_u1/data_out_1" type="array">
+      <obj_property name="ElementShortName">data_out_1[0:3][32:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out_1[0:3][32:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/conv2_u1/data_out_2" type="array">
+      <obj_property name="ElementShortName">data_out_2[0:1][32:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out_2[0:1][32:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/conv2_u1/data_out_3" type="array">
+      <obj_property name="ElementShortName">data_out_3[32:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out_3[32:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/conv2_u1/photo_high" type="array">
+      <obj_property name="ElementShortName">photo_high[6:0]</obj_property>
+      <obj_property name="ObjectShortName">photo_high[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/conv2_u1/photo_widht" type="array">
+      <obj_property name="ElementShortName">photo_widht[6:0]</obj_property>
+      <obj_property name="ObjectShortName">photo_widht[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/conv2_u1/kernel_size" type="array">
+      <obj_property name="ElementShortName">kernel_size[3:0]</obj_property>
+      <obj_property name="ObjectShortName">kernel_size[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/conv2_u1/kernel_num1" type="array">
+      <obj_property name="ElementShortName">kernel_num1[3:0]</obj_property>
+      <obj_property name="ObjectShortName">kernel_num1[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/conv2_u1/kernel_num2" type="array">
+      <obj_property name="ElementShortName">kernel_num2[3:0]</obj_property>
+      <obj_property name="ObjectShortName">kernel_num2[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/conv2_u1/weight_num" type="array">
+      <obj_property name="ElementShortName">weight_num[3:0]</obj_property>
+      <obj_property name="ObjectShortName">weight_num[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/conv2_u1/weight_widht" type="array">
+      <obj_property name="ElementShortName">weight_widht[5:0]</obj_property>
+      <obj_property name="ObjectShortName">weight_widht[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/conv2_u1/feature_widht" type="array">
+      <obj_property name="ElementShortName">feature_widht[6:0]</obj_property>
+      <obj_property name="ObjectShortName">feature_widht[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/conv2_u1/\conv2_mutiply[0].n /clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/conv2_u1/\conv2_mutiply[0].n /clk_2x" type="logic">
+      <obj_property name="ElementShortName">clk_2x</obj_property>
+      <obj_property name="ObjectShortName">clk_2x</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/conv2_u1/\conv2_mutiply[0].n /clk_5x" type="logic">
+      <obj_property name="ElementShortName">clk_5x</obj_property>
+      <obj_property name="ObjectShortName">clk_5x</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/conv2_u1/\conv2_mutiply[0].n /rst_n" type="logic">
+      <obj_property name="ElementShortName">rst_n</obj_property>
+      <obj_property name="ObjectShortName">rst_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/conv2_u1/\conv2_mutiply[0].n /weight_en" type="logic">
+      <obj_property name="ElementShortName">weight_en</obj_property>
+      <obj_property name="ObjectShortName">weight_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/conv2_u1/\conv2_mutiply[0].n /Multiply_en" type="logic">
+      <obj_property name="ElementShortName">Multiply_en</obj_property>
+      <obj_property name="ObjectShortName">Multiply_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/conv2_u1/\conv2_mutiply[0].n /weight" type="array">
+      <obj_property name="ElementShortName">weight[16:0]</obj_property>
+      <obj_property name="ObjectShortName">weight[16:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/conv2_u1/\conv2_mutiply[0].n /data_in" type="array">
+      <obj_property name="ElementShortName">data_in[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data_in[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/conv2_u1/\conv2_mutiply[0].n /data_out" type="array">
+      <obj_property name="ElementShortName">data_out[32:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out[32:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/conv2_u1/\conv2_mutiply[0].n /out_start" type="logic">
+      <obj_property name="ElementShortName">out_start</obj_property>
+      <obj_property name="ObjectShortName">out_start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/conv2_u1/\conv2_mutiply[0].n /out_end" type="logic">
+      <obj_property name="ElementShortName">out_end</obj_property>
+      <obj_property name="ObjectShortName">out_end</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/conv2_u1/\conv2_mutiply[0].n /out_vaild" type="logic">
+      <obj_property name="ElementShortName">out_vaild</obj_property>
+      <obj_property name="ObjectShortName">out_vaild</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/conv2_u1/\conv2_mutiply[0].n /weight_mult" type="array">
+      <obj_property name="ElementShortName">weight_mult[0:8][15:0]</obj_property>
+      <obj_property name="ObjectShortName">weight_mult[0:8][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/conv2_u1/\conv2_mutiply[0].n /clk_num11" type="array">
+      <obj_property name="ElementShortName">clk_num11[5:0]</obj_property>
+      <obj_property name="ObjectShortName">clk_num11[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/conv2_u1/\conv2_mutiply[0].n /weight_en_r" type="logic">
+      <obj_property name="ElementShortName">weight_en_r</obj_property>
+      <obj_property name="ObjectShortName">weight_en_r</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/conv2_u1/\conv2_mutiply[0].n /clk_num5" type="array">
+      <obj_property name="ElementShortName">clk_num5[3:0]</obj_property>
+      <obj_property name="ObjectShortName">clk_num5[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/conv2_u1/\conv2_mutiply[0].n /data_in_r" type="array">
+      <obj_property name="ElementShortName">data_in_r[0:8][31:0]</obj_property>
+      <obj_property name="ObjectShortName">data_in_r[0:8][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/conv2_u1/\conv2_mutiply[0].n /en_flag" type="logic">
+      <obj_property name="ElementShortName">en_flag</obj_property>
+      <obj_property name="ObjectShortName">en_flag</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/conv2_u1/\conv2_mutiply[0].n /en_flag_r" type="logic">
+      <obj_property name="ElementShortName">en_flag_r</obj_property>
+      <obj_property name="ObjectShortName">en_flag_r</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/conv2_u1/\conv2_mutiply[0].n /cnt_cols" type="array">
+      <obj_property name="ElementShortName">cnt_cols[5:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_cols[5:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/conv2_u1/\conv2_mutiply[0].n /cnt_cols_r" type="array">
+      <obj_property name="ElementShortName">cnt_cols_r[11:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_cols_r[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/conv2_u1/\conv2_mutiply[0].n /cnt_rows" type="array">
+      <obj_property name="ElementShortName">cnt_rows[5:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_rows[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/conv2_u1/\conv2_mutiply[0].n /multiply" type="array">
+      <obj_property name="ElementShortName">multiply[0:9][63:0]</obj_property>
+      <obj_property name="ObjectShortName">multiply[0:9][63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/conv2_u1/\conv2_mutiply[0].n /mult_r" type="array">
+      <obj_property name="ElementShortName">mult_r[0:9][31:0]</obj_property>
+      <obj_property name="ObjectShortName">mult_r[0:9][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/conv2_u1/\conv2_mutiply[0].n /mult" type="array">
+      <obj_property name="ElementShortName">mult[0:9][31:0]</obj_property>
+      <obj_property name="ObjectShortName">mult[0:9][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/conv2_u1/\conv2_mutiply[0].n /data_out_1" type="array">
+      <obj_property name="ElementShortName">data_out_1[0:4][32:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out_1[0:4][32:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/conv2_u1/\conv2_mutiply[0].n /data_out_2" type="array">
+      <obj_property name="ElementShortName">data_out_2[0:1][32:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out_2[0:1][32:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/conv2_u1/\conv2_mutiply[0].n /data_out_3" type="array">
+      <obj_property name="ElementShortName">data_out_3[32:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out_3[32:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/conv2_u1/\conv2_mutiply[0].n /data_out_4" type="array">
+      <obj_property name="ElementShortName">data_out_4[32:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out_4[32:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/conv2_u1/\conv2_mutiply[0].n /clk_5x_posedge" type="logic">
+      <obj_property name="ElementShortName">clk_5x_posedge</obj_property>
+      <obj_property name="ObjectShortName">clk_5x_posedge</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/conv2_u1/\conv2_mutiply[0].n /out_vaild_r" type="logic">
+      <obj_property name="ElementShortName">out_vaild_r</obj_property>
+      <obj_property name="ObjectShortName">out_vaild_r</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/conv2_u1/\conv2_mutiply[0].n /data_out_r" type="array">
+      <obj_property name="ElementShortName">data_out_r[32:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out_r[32:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_tb/cnn/conv2_u1/\conv2_mutiply[0].n /data_out_r2" type="array">
+      <obj_property name="ElementShortName">data_out_r2[32:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out_r2[32:0]</obj_property>
+   </wvobject>
+</wave_config>

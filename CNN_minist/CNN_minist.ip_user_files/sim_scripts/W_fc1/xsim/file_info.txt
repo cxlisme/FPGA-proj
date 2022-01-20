@@ -1,0 +1,2 @@
+W_fc1.v,verilog,xil_defaultlib,../../../../minist_cnn.srcs/sources_1/ip/W_fc1/sim/W_fc1.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

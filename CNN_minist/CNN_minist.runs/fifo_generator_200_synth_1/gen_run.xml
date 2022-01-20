@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="fifo_generator_200_synth_1" LaunchPart="xc7a200tsbg484-2" LaunchTime="1641796876">
+  <File Type="PA-TCL" Name="fifo_generator_200.tcl"/>
+  <File Type="REPORTS-TCL" Name="fifo_generator_200_reports.tcl"/>
+  <File Type="RDS-RDS" Name="fifo_generator_200.vds"/>
+  <File Type="RDS-UTIL" Name="fifo_generator_200_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="fifo_generator_200_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="fifo_generator_200.dcp"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/fifo_generator_200">
+    <File Path="$PSRCDIR/sources_1/ip/fifo_generator_200/fifo_generator_200.xci">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../minist_cnn/minist_cnn.srcs/sources_1/ip/fifo_generator_200/fifo_generator_200.xci"/>
+        <Attr Name="ImportTime" Val="1641796873"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="fifo_generator_200"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/fifo_generator_200">
+    <File Path="$PSRCDIR/sources_1/ip/fifo_generator_200/fifo_generator_200.xci">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../minist_cnn/minist_cnn.srcs/sources_1/ip/fifo_generator_200/fifo_generator_200.xci"/>
+        <Attr Name="ImportTime" Val="1641796873"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="fifo_generator_200"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

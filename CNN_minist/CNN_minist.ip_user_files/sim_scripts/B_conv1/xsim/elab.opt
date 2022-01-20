@@ -1,0 +1,1 @@
+--relax --debug typical --mt auto -L blk_mem_gen_v8_4_2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot B_conv1 xil_defaultlib.B_conv1 xil_defaultlib.glbl -log elaborate.log

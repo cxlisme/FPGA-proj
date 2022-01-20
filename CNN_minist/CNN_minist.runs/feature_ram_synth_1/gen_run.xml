@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="feature_ram_synth_1" LaunchPart="xc7a200tsbg484-2" LaunchTime="1641387045">
+  <File Type="PA-TCL" Name="feature_ram.tcl"/>
+  <File Type="REPORTS-TCL" Name="feature_ram_reports.tcl"/>
+  <File Type="RDS-RDS" Name="feature_ram.vds"/>
+  <File Type="RDS-UTIL" Name="feature_ram_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="feature_ram_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="feature_ram.dcp"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/feature_ram">
+    <File Path="$PSRCDIR/sources_1/ip/feature_ram/feature_ram.xci">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../minist_cnn/minist_cnn.srcs/sources_1/ip/feature_ram/feature_ram.xci"/>
+        <Attr Name="ImportTime" Val="1641387041"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="feature_ram"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/feature_ram">
+    <File Path="$PSRCDIR/sources_1/ip/feature_ram/feature_ram.xci">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../minist_cnn/minist_cnn.srcs/sources_1/ip/feature_ram/feature_ram.xci"/>
+        <Attr Name="ImportTime" Val="1641387041"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="feature_ram"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

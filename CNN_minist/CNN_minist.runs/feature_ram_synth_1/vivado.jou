@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Jan  5 20:50:49 2022
+# Process ID: 6332
+# Current directory: D:/DATA/vivado_project/0TEST/minist_cnn/minist_cnn/minist_cnn.runs/feature_ram_synth_1
+# Command line: vivado.exe -log feature_ram.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source feature_ram.tcl
+# Log file: D:/DATA/vivado_project/0TEST/minist_cnn/minist_cnn/minist_cnn.runs/feature_ram_synth_1/feature_ram.vds
+# Journal file: D:/DATA/vivado_project/0TEST/minist_cnn/minist_cnn/minist_cnn.runs/feature_ram_synth_1\vivado.jou
+#-----------------------------------------------------------
+source feature_ram.tcl -notrace

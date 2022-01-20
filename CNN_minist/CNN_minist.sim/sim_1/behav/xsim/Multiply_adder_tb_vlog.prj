@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../CNN.srcs/sources_1/ip/W_conv1/sim/W_conv1.v" \
+"../../../../CNN.srcs/sources_1/new/Multiply_adder.v" \
+"../../../../CNN.srcs/sim_1/new/Multiply_adder_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
