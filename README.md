@@ -10,4 +10,4 @@ FPGA project
 在第一层的卷积中通过单行像素输入，在第三层的卷积中则是feature map一起输入，分别模拟不同的情况下数据输入。  
 该工程通过实际搭建的神经网络结果进行过对比，中间feature map及结果都只是在精度上有差别。代码整体结构上是没有问题的。  
 本代码只通过仿真，并未深究跨时钟域时序分析等问题，仅供参考学习   
-此外笔者还录制了讲解视频，有兴趣的可以看一看，链接：https://space.bilibili.com/430239752/video
+此外笔者还录制了讲解视频，有兴趣的可以看一看，链接：https://www.bilibili.com/video/BV13L411K7ma?share_source=copy_web
