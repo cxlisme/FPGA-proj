@@ -26,7 +26,7 @@ parameter photo_widht = 7'd12,
 parameter kernel_size = 4'd3,
 parameter kernel_num1 = 4'd6,
 parameter kernel_num2 = 4'd10,
-parameter weight_num = 10'd54,//Áù¸ö¾í»ıºË
+parameter weight_num = 10'd54,//å…­ä¸ªå·ç§¯æ ¸
 parameter weight_widht = 6'd17)
 (
 	input           						clk,
@@ -37,8 +37,8 @@ parameter weight_widht = 6'd17)
     );
     
     ///////////////////////////////////////////////////////////////
-    /////////////////È¨ÖµµÄ¶ÁÈ¡////////////////////////////////////
-    /////////////////È¨ÖµÒ²ÊÇÓĞÏŞµÄ£¬ÔÚlinebuffer×¼±¸µÄÊ±ºò¾Í¶ÁÈ¡³öÀ´·ÅÈë³Ë·¨Æ÷ÖĞ
+    /////////////////æƒå€¼çš„è¯»å–////////////////////////////////////
+    /////////////////æƒå€¼ä¹Ÿæ˜¯æœ‰é™çš„ï¼Œåœ¨linebufferå‡†å¤‡çš„æ—¶å€™å°±è¯»å–å‡ºæ¥æ”¾å…¥ä¹˜æ³•å™¨ä¸­
     ///////////////////////////////////////////////////////////////
 
 	wire 	[weight_widht-1 : 0] 		w_dout;
@@ -71,7 +71,7 @@ parameter weight_widht = 6'd17)
 	
 	assign  en = ((rd_vaild<4'd11) && weight_flat && (cnt_addra<weight_num))?1'b1:1'b0;
 	
-	always@(posedge vaild or negedge c2_w_en)begin
+	always@(posedge vaild or negedge c2_w_en or negedge rst_n)begin
 		if(!rst_n)
 			weight_flat <= 1'd0;
 		else 
@@ -91,7 +91,7 @@ parameter weight_widht = 6'd17)
 	end
 	assign addra_w = cnt_addra+(rd_vaild-1)*weight_num; 
 	
-    	//È¨ÖµµÄ¶ÁÈ¡
+    	//æƒå€¼çš„è¯»å–
     	W_conv2 W2 (
     		.clka(clk),    // input wire clka
     		.ena(en),      // input wire ena
@@ -109,7 +109,7 @@ parameter weight_widht = 6'd17)
     		end
     	endgenerate
     	
-    	//½ÓÏÂÀ´½«È¨ÖµÍ¨¹ıÁù¸ö±äÁ¿ÒÀ´ÎÊä³öµ½Multiply_adderÖĞ
+    	//æ¥ä¸‹æ¥å°†æƒå€¼é€šè¿‡å…­ä¸ªå˜é‡ä¾æ¬¡è¾“å‡ºåˆ°Multiply_adderä¸­
 	assign  c2_w_en = ((rd_vaild<4'd11) && weight_flat && (cnt_addra>=weight_num) && (cnt_weight < kernel_size*kernel_size))? 1'b1:1'b0;
 	
 	
