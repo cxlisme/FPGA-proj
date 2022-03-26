@@ -24,7 +24,7 @@ parameter feature_widht = 7'd32)
 	output					out_end,
 	output					out_vaild
 );
-	//½«È¨ÖØÏÈ´æÆğÀ´
+	//å°†æƒé‡å…ˆå­˜èµ·æ¥
 	wire signed  	[weight_widht-2: 0]		weight_mult[ 0:kernel_size*kernel_size-1];
 	reg			[5:0]				clk_num26;
 	reg								clk_num_flag;
@@ -34,8 +34,8 @@ parameter feature_widht = 7'd32)
 	
 	reg								en_flag;
 	reg								en_flag_r;
-	reg			[5:0]				cnt_col;//¼ÆËãÁĞ
-	//ÓĞ·ûºÅ*ÎŞ·ûºÅ£»ÎŞ·ûºÅ*ÓĞ·ûºÅ£¬Ëã·¨²»Ò»ÖÂ£»
+	reg			[5:0]				cnt_col;//è®¡ç®—åˆ—
+	//æœ‰ç¬¦å·*æ— ç¬¦å·ï¼›æ— ç¬¦å·*æœ‰ç¬¦å·ï¼Œç®—æ³•ä¸ä¸€è‡´ï¼›
 	wire signed  	[31: 0]				mult[0: 25];
 	wire signed  	[31: 0]				multiply[0: 25];
 		
@@ -46,7 +46,7 @@ parameter feature_widht = 7'd32)
 	wire  signed  	[32: 0]				data_out_5;
 	reg 			[32:0]				data_out_r;
 
-	//data_ou1t£¬½«9¸ö³Ë·¨»ıÏà¼Ó½øĞĞÊä³ö
+	//data_ou1tï¼Œå°†9ä¸ªä¹˜æ³•ç§¯ç›¸åŠ è¿›è¡Œè¾“å‡º
 	wire								clk_5x_posedge;
 		
 		
@@ -68,7 +68,7 @@ parameter feature_widht = 7'd32)
 			clk_num26 <= clk_num26 + 1'b1;
 	end
 	
-	//È¨ÖØÀı»¯25¸ö½øĞĞ´¢´æ
+	//æƒé‡ä¾‹åŒ–25ä¸ªè¿›è¡Œå‚¨å­˜
 	genvar i;
 	generate 
 		for(i=0; i<kernel_size*kernel_size; i=i+1)
@@ -78,7 +78,7 @@ parameter feature_widht = 7'd32)
 		end
 	endgenerate
 	
-	//ÊäÈëµÄÊı¾İ·Ö¸øÎå¸ödsp½øĞĞ´¦Àí
+	//è¾“å…¥çš„æ•°æ®åˆ†ç»™äº”ä¸ªdspè¿›è¡Œå¤„ç†
 	always@(posedge clk or negedge rst_n)begin
 		if(!rst_n)begin
 			en_flag <= 1'd0;
@@ -135,7 +135,7 @@ parameter feature_widht = 7'd32)
 
 	
 	assign multiply[25] = 32'd0;
-	assign mult[25] = (data_b[16]) ? {data_b[16],7'h7f,~data_b[15:0]+1,8'hff}:data_b*9'd256;
+	assign mult[25] = (data_b[16]) ? {data_b[16],7'h7f,~data_b[15:0]+1,8'h00}:data_b*9'd256;
 	
 	genvar j;
 	generate
@@ -150,7 +150,7 @@ parameter feature_widht = 7'd32)
 		end
 	endgenerate
 	////////////////////////////////////////
-	//////////////////Ïà¼Ó//////////////////
+	//////////////////ç›¸åŠ //////////////////
 	////////////////////////////////////////
 
 	assign clk_5x_posedge = (clk_num5 == 3'd1)?1'b1:1'b0;
@@ -207,7 +207,7 @@ parameter feature_widht = 7'd32)
 			data_out_r <= data_out_5;
 	end
 	//assign data_out = data_out_r;
-	//¼¤»îº¯Êı
+	//æ¿€æ´»å‡½æ•°
 	assign data_out   = (data_out_r[32]==1'b0)? data_out_r[31:8]:32'b0;
 	
 endmodule
