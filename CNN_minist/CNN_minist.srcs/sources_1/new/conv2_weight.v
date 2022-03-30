@@ -71,11 +71,11 @@ parameter weight_widht = 6'd17)
 	
 	assign  en = ((rd_vaild<4'd11) && weight_flat && (cnt_addra<weight_num))?1'b1:1'b0;
 	
-	always@(posedge vaild or negedge c2_w_en or negedge rst_n)begin
+	always@(*)begin
 		if(!rst_n)
-			weight_flat <= 1'd0;
-		else 
-			weight_flat <= ~weight_flat;
+			weight_flat = 1'd0;
+		else if(vaild || !c2_w_en)
+			weight_flat = ~weight_flat;
 		
 	end
 			
