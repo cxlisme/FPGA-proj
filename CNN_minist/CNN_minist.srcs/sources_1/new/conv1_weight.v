@@ -24,7 +24,7 @@ module conv1_weight
 #(parameter photo_high = 7'd28,
 parameter photo_widht = 7'd28,
 parameter kernel_size = 4'd5,
-parameter parameter_w = kernel_size * kernel_size * 6,//Áù¸ö¾í»ıºË
+parameter parameter_w = kernel_size * kernel_size * 6,//å…­ä¸ªå·ç§¯æ ¸
 parameter weight_widht = 6'd17,
 parameter pix_widht = 6'd16)
 (
@@ -36,8 +36,8 @@ parameter pix_widht = 6'd16)
     );
     
     ///////////////////////////////////////////////////////////////
-    /////////////////È¨ÖµµÄ¶ÁÈ¡////////////////////////////////////
-    /////////////////È¨ÖµÒ²ÊÇÓĞÏŞµÄ£¬ÔÚlinebuffer×¼±¸µÄÊ±ºò¾Í¶ÁÈ¡³öÀ´·ÅÈë³Ë·¨Æ÷ÖĞ
+    /////////////////æƒå€¼çš„è¯»å–////////////////////////////////////
+    /////////////////æƒå€¼ä¹Ÿæ˜¯æœ‰é™çš„ï¼Œåœ¨linebufferå‡†å¤‡çš„æ—¶å€™å°±è¯»å–å‡ºæ¥æ”¾å…¥ä¹˜æ³•å™¨ä¸­
     ///////////////////////////////////////////////////////////////
     
 	wire 	[weight_widht-1 : 0] 		w_dout;
@@ -45,17 +45,17 @@ parameter pix_widht = 6'd16)
 	wire		[7 : 0] 					addra_w;
 	reg 		[7:0]					cnt_addra;
 	wire								en;
-	reg								weight_flat;
+	reg								weight_flag;
 	reg	 	[weight_widht-1 : 0] 		Multiply_weight[0:5];
 	reg		[5:0]					cnt_weight25;   
 	
-	assign  en = (weight_flat && (cnt_addra<8'd150))?1'b1:1'b0;
+	assign  en = (weight_flag && (cnt_addra<8'd150))?1'b1:1'b0;
 	
 	always@(*)begin
 		if(!rst_n)
-			weight_flat <= 1'd0;
+			weight_flag <= 1'd0;
 		else if(vaild)
-			weight_flat <= 1'd1;
+			weight_flag <= 1'd1;
 	end
 			
 	always@(posedge clk or negedge rst_n)begin
@@ -63,7 +63,7 @@ parameter pix_widht = 6'd16)
 			cnt_addra <= 7'd0;
 		else if(cnt_addra == 8'd150)
 			cnt_addra <= cnt_addra;
-		else if(weight_flat)
+		else if(weight_flag)
 			cnt_addra <= cnt_addra + 1'd1;
 		else
 			cnt_addra <= cnt_addra;
@@ -71,7 +71,7 @@ parameter pix_widht = 6'd16)
 	
 	assign addra_w = cnt_addra; 
     		
-    	//È¨ÖµµÄ¶ÁÈ¡
+    	//æƒå€¼çš„è¯»å–
     	W_conv1 W1 (
     		.clka(clk),    // input wire clka
     		.ena(en),      // input wire ena
@@ -84,11 +84,11 @@ parameter pix_widht = 6'd16)
     	generate 
     		for(w_i=0;w_i<parameter_w;w_i=w_i+1)
     		begin:weight_i
-    			assign weight[w_i] = (weight_flat && (addra_w-1)==w_i) ? w_dout: weight[w_i];
+    			assign weight[w_i] = (weight_flag && (addra_w-1)==w_i) ? w_dout: weight[w_i];
     		end
     	endgenerate
 	
-	assign  c1_w_en = (weight_flat && (cnt_addra==8'd150) && (cnt_weight25 < 6'd25))? 1'b1:1'b0;
+	assign  c1_w_en = (weight_flag && (cnt_addra==8'd150) && (cnt_weight25 < 6'd25))? 1'b1:1'b0;
 	
 	always@(posedge clk or negedge rst_n)begin
 		if(!rst_n)		  
@@ -99,7 +99,7 @@ parameter pix_widht = 6'd16)
 			cnt_weight25 <= cnt_weight25 + 1'b1;
 	end
 	
-	//½«È¨ÖµÍ¨¹ıÁù¸ö±äÁ¿ÒÀ´ÎÊä³öµ½Multiply_adderÖĞ
+	//å°†æƒå€¼é€šè¿‡å…­ä¸ªå˜é‡ä¾æ¬¡è¾“å‡ºåˆ°Multiply_adderä¸­
 	genvar m_w;
 	generate 
 		for(m_w=0; m_w< 6; m_w=m_w+1)
