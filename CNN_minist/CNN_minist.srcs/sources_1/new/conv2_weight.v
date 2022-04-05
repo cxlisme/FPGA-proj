@@ -46,7 +46,7 @@ parameter weight_widht = 6'd17)
 	wire		[11:0] 					addra_w;
 	wire								en;
 	reg 		[11:0]					cnt_addra;
-	reg								weight_flat;
+	reg								weight_flag;
 	reg		[3:0]					rd_vaild;//
 	reg		[3:0]					rd_vaild_r;//
 	
@@ -69,13 +69,13 @@ parameter weight_widht = 6'd17)
 			rd_vaild_r <= rd_vaild;
 	end
 	
-	assign  en = ((rd_vaild<4'd11) && weight_flat && (cnt_addra<weight_num))?1'b1:1'b0;
+	assign  en = ((rd_vaild<4'd11) && weight_flag && (cnt_addra<weight_num))?1'b1:1'b0;
 	
 	always@(posedge vaild or negedge rst_n or negedge c2_w_en)begin
 		if(!rst_n)
-			weight_flat <= 1'd0;
+			weight_flag <= 1'd0;
 		else if(vaild || !c2_w_en)
-			weight_flat <= ~weight_flat;
+			weight_flag <= ~weight_flag;
 	end
 			
 	always@(posedge clk or negedge rst_n)begin
@@ -83,7 +83,7 @@ parameter weight_widht = 6'd17)
 			cnt_addra <= 11'd0;
 		else if(rd_vaild_r<rd_vaild)//(cnt_addra == weight_num)
 			cnt_addra <= 11'd0;
-		else if(weight_flat)
+		else if(weight_flag)
 			cnt_addra <= cnt_addra + 1'd1;
 		else
 			cnt_addra <= cnt_addra;
@@ -104,12 +104,12 @@ parameter weight_widht = 6'd17)
     	generate 
     		for(w_i=0;w_i<weight_num;w_i=w_i+1)
     		begin:weight_i
-    			assign weight[w_i] = (weight_flat && (cnt_addra-1)==w_i) ? w_dout: weight[w_i];
+    			assign weight[w_i] = (weight_flag && (cnt_addra-1)==w_i) ? w_dout: weight[w_i];
     		end
     	endgenerate
     	
     	//接下来将权值通过六个变量依次输出到Multiply_adder中
-	assign  c2_w_en = ((rd_vaild<4'd11) && weight_flat && (cnt_addra>=weight_num) && (cnt_weight < kernel_size*kernel_size))? 1'b1:1'b0;
+	assign  c2_w_en = ((rd_vaild<4'd11) && weight_flag && (cnt_addra>=weight_num) && (cnt_weight < kernel_size*kernel_size))? 1'b1:1'b0;
 	
 	
 	always@(posedge clk or negedge rst_n)begin
